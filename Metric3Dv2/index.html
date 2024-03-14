@@ -56,13 +56,51 @@
 <body>
 
 
+  
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title" style="margin-bottom: 0"><strong>📏Metric3D v2</strong></h1>
+          <h2 class="title is-3 publication-title" style="margin-top: 0; margin-bottom: 0">A Versatile Monocular Geometric Foundation Model for Zero-shot Metric Depth and Surface Normal Estimation</h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://github.com/JUGGHM">Mu Hu</a><sup>*</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://yvanyin.net/">Wei Yin</a><sup>*</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://icoz69.github.io/">Chi Zhang</a>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://zhipengcai.github.io/">Zhipeng Cai</a>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://www.xxlong.site/">Xiaoxiao Long</a>
+            </span>
+            <span class="author-block">
+              <a href="https://stan-haochen.github.io/">Hao Chen</a>
+            </span>
+            <br>
+            <span class="author-block">
+              <a href="https://wang-kx.github.io/">Kaixuan Wang</a>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://www.skicyyu.org/">Gang Yu</a>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://cshen.github.io/">Chunhua Shen</a>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://uav.hkust.edu.hk/">Shaojie Shen</a>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
 
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>*</sup>Equal contribution</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- <span class="author-block"><sup>†</sup>Corresponding author</span>&nbsp;&nbsp;&nbsp;&nbsp; -->
+          </div>
+          
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
@@ -89,10 +127,291 @@
             </div>
 
           </div>
+
+          <img src="./resource_new/media/page2.png" class="center">
+          <div style="text-align:center;">
+            <p style="margin-top: 0px">
+              Metric3Dv2 is a versatile zero-shot metric depth and surface normal estimator
+            </p>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="margin-top: -30px">Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present Metric3Dv2, a versatile geometric foundation model for zero-shot metric depth and surface normal estimation. We address the metric ambiguity fo depth and the label deficiency of normal by 
+            (1) Transforming all images and depth labels into a canonical camera space, to avoid confusing networks by the ambiguity from varying camera focal lengths. (2) A joint depth-normal optimization module to distill knowledge from abundant and diverse depth labels to normal learning.
+           
+            <br>
+            <br>
+
+            The sliders below compare on in-the-wild images of Metric3Dv2 with the previous state-of-the-art methods ZoeDepth and Omnidata(v2).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="Metric Depth results">
+  <div class="container is-max-desktop">
+
+    <!-- Results. -->
+    <div class="columns is-centered ">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered" style="margin-top: -30px">Results</h2>        
+
+        <h3 class="title is-4">Zero-shot monocular metric depth estimation</h3>
+        <div class="container">
+          <ul class="nav nav-tabs nav-fill nav-justified" id="object-scale-recon">
+              <li class="nav-item">
+                <a class="nav-link" onclick="objectSceneEvent(0)">0</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" onclick="objectSceneEvent(1)">1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="objectSceneEvent(2)">2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="objectSceneEvent(3)">3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="objectSceneEvent(4)">4</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="objectSceneEvent(5)">5</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="objectSceneEvent(6)">6</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" onclick="objectSceneEvent(7)">7</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" onclick="objectSceneEvent(8)">8</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="objectSceneEvent(9)">9</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="objectSceneEvent(10)">10</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="objectSceneEvent(11)">11</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="objectSceneEvent(12)">12</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="objectSceneEvent(13)">13</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" onclick="objectSceneEvent(14)">14</a>
+              </li> 
+          </ul>
+          <div class="b-dics" style="width: 1000px; font-weight: 600;">
+              <img src="resource_new/depth/gundam.jpg" alt="RGB">
+              <img src="resource_new/depth/gundam_ours.jpg" alt="Ours depth">
+              <img src="resource_new/depth/gundam_zoe.jpg" alt="ZoeDepth"> 
+          </div>
+        </div>
+
+        <br>
+
+        <h3 class="title is-4">Zero-shot monocular surface normal estimation</h3>
+
+        <div class="container">
+          <ul class="nav nav-tabs nav-fill nav-justified" id="ablation-3d-filter">
+              <li class="nav-item">
+                <a class="nav-link" onclick="ablation3DEvent(0)">0</a>
+              </li>      
+              <li class="nav-item">
+                <a class="nav-link active" onclick="ablation3DEvent(1)">1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="ablation3DEvent(2)">2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="ablation3DEvent(3)">3</a>
+              </li>        
+              <li class="nav-item">
+                <a class="nav-link" onclick="ablation3DEvent(4)">4</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="ablation3DEvent(5)">5</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="ablation3DEvent(6)">6</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="ablation3DEvent(7)">7</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="ablation3DEvent(8)">8</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="ablation3DEvent(9)">9</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="ablation3DEvent(10)">10</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="ablation3DEvent(11)">11</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="ablation3DEvent(12)">12</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="ablation3DEvent(13)">13</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="ablation3DEvent(14)">14</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="ablation3DEvent(15)">15</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="ablation3DEvent(16)">16</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="ablation3DEvent(17)">17</a>
+              </li>
+          </ul>
+          <div class="b-dics" style="width: 1000px; font-weight: 600;">
+              <!-- <img src="resources/360_stmt_ablation/bicycle_0_ours.jpg" alt="RGB">
+              <img src="resources/360_stmt_ablation/bicycle_0_ours.jpg" alt="Ours normal">
+              <img src="resources/360_stmt_ablation/bicycle_0_upgt.jpg" alt="OmniData normal"> -->
+              <img src="resource_new/normal/gundam.jpg" alt="RGB">
+              <img src="resource_new/normal/gundam_ours.jpg" alt="Ours normal">
+              <img src="resource_new/normal/gundam_omni.jpg" alt="OmniData (v2) normal"> 
+          </div>
+        </div>
+
+        <br><br>
+
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="margin-top: -30px">How it works</h2>
+        <img src="./resource_new/media/pipeline4.png" class="center">
+        <div class="content has-text-justified">
+          <p>
+            <br>
+            We first transform the input image <var>I</var> to the canonical space <var>c</var>, and further feed the transformed image <var>I<sub>c</sub></var> into a depth-normal estimation model to predict metric depth <var>D<sub>c</sub></var> in the canonical space and surface normal <var>N</var>. 
+            <br>
+            <br>
+            During training, <var>D<sub>c</sub></var> is supervised by a GT depth <var>D<sup>*</sup><sub>c</sub></var> which is a transformed version in the canonical space. In inference, after producing the metric depth <var>D<sub>c</sub></var> in the canonical space, we perform a de-canonical transformation to convert it back to the space of the original input <var>I</var>. 
+              
+            <br>
+            <br>
+            The predicted normal <var>N</var> is supervised by depth-normal consistency via the recovered metric depth <var>D</var> as well as GT normal <var>D<sup>*</sup></var>, if available.       
+            <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="margin-top: -30px">Quatitative Comparison</h2>
+        <div class="content has-text-justified">
+          <p>
+            It
+            <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="margin-top: -30px">One Minute Video Demo</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present our depth and normal prediction as well as their applications on 3D reconstruction and SLAM here.
+          </p>
+
+          <body>
+            <video loop="loop" controls="controls">
+          <source src="./resource_new/media/demo_full.mp4" type="video/mp4"></source></video>
+         </body>
+
+          <!-- <div class="content has-text-centered">
+            <video class="video" width="100%" id="demo" loop playsinline autoplay muted src="./resource_new/media/demo.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
+            <canvas height=0 class="videoMerge" id="demo"></canvas>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <h4 class="title">Metric3D V2</h4>
+    <pre><code>@article{hu2024metric3dv2,
+  author    = {Hu, Mu and Yin, Wei, and Zhang, Chi and Cai, Zhipeng and Long, Xiaoxiao and Chen, Hao, and Wang, Kaixuan and Yu, Gang and Shen, Chunhua and Shen, Shaojie.},
+  title     = {A Versatile Monocular Geometric Foundation Model for Zero-shot Metric Depth and Surface Normal Estimation},
+  journal   = {arxiv.},
+  year      = {2024},
+}</code></pre>
+<h4 class="title">Metric3D V1</h4>
+<pre><code>@inproceedings{yin2023metric3d,
+  title={Metric3D: Towards zero-shot metric 3d prediction from a single image},
+  author={Yin, Wei and Zhang, Chi and Chen, Hao and Cai, Zhipeng and Yu, Gang and Wang, Kaixuan and Chen, Xiaozhi and Shen, Chunhua},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={9043--9053},
+  year={2023},
+}</code></pre>
+
+  </div>
+</section>
+
+<section class="section" id="References">
+  <div class="container is-max-desktop content">
+
+        <h3 class="title is-4">References</h3>
+        <div class="content has-text-justified">
+          <ul>
+            <li>
+              <a href="https://github.com/isl-org/ZoeDepth" target="_blank">ZoeDepth: Combining relative and metric depth</a>
+            </li>
+            <li>
+              <a href="https://omnidata.vision/" target="_blank">OmniData: A Scalable Pipeline for Making Multi-Task Mid-Level Vision Datasets from 3D Scans</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 </section>
 
 <footer class="footer">
@@ -106,7 +425,8 @@
             This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
             This webpage template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> and Mip-Splatting<a href="https://niujinshuchong.github.io/mip-splatting/">. 
-            We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> and <a href="https://niujinshuchong.github.io/">Zehao Yu</a> for developing and open-sourcing this template. 
+            We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> and <a href="https://niujinshuchong.github.io/">Zehao Yu</a> for developing and open-sourcing this template.  
+            The image comparison with sliding bar is from <a href="https://research.nvidia.com/labs/dir/neuralangelo/">Neuralangelo</a>. 
           </p>
         </div>
       </div>

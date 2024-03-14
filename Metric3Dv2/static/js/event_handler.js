@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', domReady);
                         image.src = 'resource_new/depth/gundam';
                         break;
                     case 1:
-                        image.src = 'resource_new/depth/terra';
+                        image.src = 'resource_new/depth/venue';
                         break;
                     case 2:
                         image.src = 'resource_new/depth/sketch_driving';
@@ -103,11 +103,35 @@ document.addEventListener('DOMContentLoaded', domReady);
                         image.src = 'resource_new/depth/jojo';
                         break;;
                     case 5:
-                        image.src = 'resource_new/depth/edfu';
+                        image.src = 'resource_new/depth/terra';
                         break;
                     case 6:
                         image.src = 'resource_new/depth/drone';
-                        break;    
+                        break;  
+                    case 7:
+                        image.src = 'resource_new/depth/panth';
+                        break;
+                    case 8:
+                        image.src = 'resource_new/depth/terra';
+                        break;
+                    case 9:
+                        image.src = 'resource_new/depth/train';
+                        break;
+                    case 10:
+                        image.src = 'resource_new/depth/museum';
+                        break;
+                    case 11:
+                        image.src = 'resource_new/depth/indoor';
+                        break;;
+                    case 12:
+                        image.src = 'resource_new/depth/valley';
+                        break;
+                    case 13:
+                        image.src = 'resource_new/depth/church';
+                        break;   
+                    case 14:
+                        image.src = 'resource_new/depth/street2';
+                        break;   
                 }
                 switch (i) {
                     case 0:
@@ -144,7 +168,7 @@ document.addEventListener('DOMContentLoaded', domReady);
                         image.src = 'resource_new/normal/gundam';
                         break;
                     case 1:
-                        image.src = 'resource_new/normal/chess';
+                        image.src = 'resource_new/normal/venue';
                         break;
                     case 2:
                         image.src = 'resource_new/normal/colo';
@@ -153,7 +177,7 @@ document.addEventListener('DOMContentLoaded', domReady);
                         image.src = 'resource_new/normal/red_bird';
                         break;
                     case 4:
-                        image.src = 'resource_new/normal/roll';
+                        image.src = 'resource_new/normal/car';
                         break;
                     case 5:
                         image.src = 'resource_new/normal/starcraft';
@@ -161,6 +185,39 @@ document.addEventListener('DOMContentLoaded', domReady);
                     case 6:
                         image.src = 'resource_new/normal/arena';
                         break;
+                    case 7:
+                        image.src = 'resource_new/normal/chess';
+                        break;
+                    case 8:
+                        image.src = 'resource_new/normal/panth';
+                        break;
+                    case 9:
+                        image.src = 'resource_new/normal/rocket';
+                        break;
+                    case 10:
+                        image.src = 'resource_new/normal/escalator';
+                        break;
+                    case 11:
+                        image.src = 'resource_new/normal/train';
+                        break;
+                    case 12:
+                        image.src = 'resource_new/normal/museum';
+                        break;
+                    case 13:
+                        image.src = 'resource_new/normal/indoor';
+                        break;
+                    case 14:
+                        image.src = 'resource_new/normal/campus';
+                        break;
+                    case 15:
+                        image.src = 'resource_new/normal/bev_driving';
+                        break;    
+                    case 16:
+                        image.src = 'resource_new/normal/catdog';
+                        break;   
+                    case 17:
+                        image.src = 'resource_new/normal/street';
+                        break; 
                 }
                 switch (i) {
                     case 0:
